@@ -3,6 +3,20 @@ var loses=0;
 
 
 
+    $(document).ready(function() {
+      //When random button is clicked...
+     $('#random-button').on("click", function() {
+
+      ///...we generate  a random number
+         var random = Math.floor(Math.random() * 1000) + 1;
+
+      ///...and then dumb the random nubmer into our random-number div.
+         $("#random-number").html(random);
+      });
+      // ...
+
+    });
+
 function startGame() {
 
     numGuesses = 11;
