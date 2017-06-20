@@ -38,8 +38,8 @@ var num4 = Math.floor(Math.random() * 11 + 1);
     $("#blue").on("click", function() {
     yourGem+=num4;
     $("#yourGem").text(yourGem);
-    //endGame();
-    reset();
+    endGame();
+    //reset();
         });
 
 
@@ -51,7 +51,7 @@ $("#ranGem").text(randomNum);
 //game continues if yourgem is less than random
 //function game(){
  //   if (yourGem < ranGem){
-        console.log('game is talking')
+       // console.log('game is talking')
 //};
 
 //end game with lose if yourgem is more than random gem, with win if your gem is = to randomgem
@@ -74,10 +74,11 @@ function endGame(){
 
 // reset the game
 function reset(){
-
-   randomNum = Math.floor(Math.random() * 101 + 19);
-
-   num1 = Math.floor(Math.random() * 11 + 1);
+    randomNum = Math.floor(Math.random() * 101 + 19);
+    $("#ranGem").text(randomNum);
+	yourGem=0;	
+	$("#yourGem").text(yourGem);
+    num1 = Math.floor(Math.random() * 11 + 1);
     num2 = Math.floor(Math.random() * 11 + 1);
     num3 = Math.floor(Math.random() * 11 + 1);
     num4 = Math.floor(Math.random() * 11 + 1);
