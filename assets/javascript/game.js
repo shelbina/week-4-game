@@ -15,15 +15,13 @@ var num1 = Math.floor(Math.random() * 11 + 1);
     $("#yourGem").text(yourGem);
     console.log('ranGem: '+ ranGem +" yourGem"+yourGem);
     endGame();
-    //
-        });
+         });
 
 var num2 = Math.floor(Math.random() * 11 + 1);
     $("#green").on("click", function() {
     yourGem+=num2;
     $("#yourGem").text(yourGem);
     endGame();
-    //reset();
         });
 
 var num3 = Math.floor(Math.random() * 11 + 1);
@@ -31,7 +29,6 @@ var num3 = Math.floor(Math.random() * 11 + 1);
     yourGem+=num3;
     $("#yourGem").text(yourGem);
     endGame();
-    //reset();
         });
 
 var num4 = Math.floor(Math.random() * 11 + 1);
@@ -39,20 +36,12 @@ var num4 = Math.floor(Math.random() * 11 + 1);
     yourGem+=num4;
     $("#yourGem").text(yourGem);
     endGame();
-    //reset();
         });
-
-
 
 //generate random gem power
 var randomNum = Math.floor(Math.random() * 101 + 19);
 $("#ranGem").text(randomNum);
 
-//game continues if yourgem is less than random
-//function game(){
- //   if (yourGem < ranGem){
-       // console.log('game is talking')
-//};
 
 //end game with lose if yourgem is more than random gem, with win if your gem is = to randomgem
 function endGame(){
@@ -69,8 +58,6 @@ function endGame(){
         reset();
     }
     };
-//};
-
 
 // reset the game
 function reset(){
